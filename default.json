@@ -19,12 +19,7 @@
       ":semanticCommitsDisabled",
       ":maintainLockFilesDisabled",
       "schedule:nonOfficeHours",
-      ":noUnscheduledUpdates",
-      ":emberTemplateLint",
-      ":eslint",
-      ":stylelint",
-      ":tslint",
-      ":base"
+      ":noUnscheduledUpdates"
     ],
     "assignees": ["furkatgofurov7"],
     "reviewers": ["namnx228"],
