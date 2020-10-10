@@ -94,6 +94,14 @@
       },
       {
         "packagePatterns": [
+          "^vscode-python"
+        ],
+        "groupName": "vscode-python monorepo",
+        "groupSlug": "vscode-python",
+        "enabled": true
+      },
+      {
+        "packagePatterns": [
           "^docker-curriculum"
         ],
         "rangeStrategy": "auto",
