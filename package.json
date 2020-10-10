@@ -1,5 +1,5 @@
 {
-    "name": "@furkatgofurov7/renovate-config",
+    "name": "renovate-config",
     "version": "0.0.1",
     "description": "Shared Renovate configuration for @furkatgofurov7 repositories",
     "license": "MIT",
