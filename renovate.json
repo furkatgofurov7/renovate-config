@@ -23,10 +23,10 @@
       ":emberTemplateLint",
       ":eslint",
       ":stylelint",
-      ":tslint",
-      ":assignee(furkatgofurov7)",
-      "reviewer(namnx228)"
+      ":tslint"
     ],
+    "assignees": ["furkatgofurov7"],
+    "reviewers": ["namnx228"],
     "timezone": "Europe/Helsinki",
     "automerge": false,
     "major": {
