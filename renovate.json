@@ -99,6 +99,15 @@
         "masterIssueApproval": false,
         "groupName": "docker-curriculum monorepo",
         "groupSlug": "docker-curriculum"
+      },
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7/github-"
+        ],
+        "rangeStrategy": "auto",
+        "masterIssueApproval": false,
+        "groupName": "github-readme-stats monorepo",
+        "groupSlug": "github-readme-stats"
       }
     ],
     "ignoreDeps": [
