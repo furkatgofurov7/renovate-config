@@ -98,6 +98,14 @@
       },
       {
         "packagePatterns": [
+          "^@furkatgofurov7/awesome-"
+        ],
+        "rangeStrategy": "auto",
+        "groupName": "awesome-README-templates monorepo",
+        "groupSlug": "awesome-README-templates"
+      },
+      {
+        "packagePatterns": [
           "^@furkatgofurov7/github-"
         ],
         "rangeStrategy": "auto",
