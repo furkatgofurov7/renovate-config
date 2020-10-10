@@ -126,7 +126,16 @@
         "groupName": "github-readme-stats monorepo",
         "groupSlug": "github-readme-stats",
         "enabled": true
-      }
+      },
+      {
+        "packagePatterns": [ "eslint" ],
+        "groupName": "eslint"
+      },
+      {
+        "packageNames": ["husky"],
+        "packagePatterns": ["^@husky/"],
+        "groupName": "husky monorepo"
+       }
     ],
     "ignoreDeps": [
       "bower"
