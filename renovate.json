@@ -56,15 +56,6 @@
         "enabled": true
       },     
       {
-        "packagePatterns": [
-          "*"
-        ],
-        "minor": {
-          "groupName": "all non-major dependencies",
-          "groupSlug": "all-minor-patch"
-        }
-      },
-      {
         "depTypeList": [
           "dependencies"
         ],
