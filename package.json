@@ -1,9 +1,9 @@
 {
     "name": "@furkatgofurov7/renovate-config",
     "version": "0.0.1",
-    "renovate-config": {
-      "default": {
-        "extends": ["config:base", "schedule:nonOfficeHours"]
-      }
+    "description": "Shared Renovate configuration for @furkatgofurov7 repositories",
+    "license": "MIT",
+    "devDependencies": {
+      "renovate": "^13.99.15"
     }
 }
