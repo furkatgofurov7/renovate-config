@@ -23,7 +23,9 @@
       ":emberTemplateLint",
       ":eslint",
       ":stylelint",
-      ":tslint"
+      ":tslint",
+      ":assignee(furkatgofurov7)",
+      "reviewer(namnx228)"
     ],
     "timezone": "Europe/Helsinki",
     "automerge": false,
@@ -46,6 +48,10 @@
     "masterIssue": true,
     
     "packageRules": [
+      {
+        "packageNames": ["aws-sdk"],
+        "extends": ["schedule:monthly"]
+      },
       {
         "datasources": ["docker"],
         "labels": ["docker-update"],
