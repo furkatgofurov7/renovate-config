@@ -6,20 +6,34 @@
       ":combinePatchMinorReleases",
       ":ignoreUnstable",
       ":prImmediately",
-      ":semanticCommitsDisabled",
+      ":semanticPrefixFixDepsChoreOthers",
+      ":updateNotScheduled",
       ":automergeDisabled",
       ":ignoreModulesAndTests",
-      ":maintainLockFilesDisabled",
-      ":prHourlyLimit4",
+      ":autodetectPinVersions",
+      ":prHourlyLimit2",
       ":prConcurrentLimit20",
       "group:monorepos",
       "group:recommended",
       "helpers:disableTypesNodeMajor",
-      "helpers:oddIsUnstablePackages",
+      ":semanticCommitsDisabled",
+      ":maintainLockFilesDisabled",
       "schedule:nonOfficeHours",
-      ":noUnscheduledUpdates"
+      ":noUnscheduledUpdates",
+      ":emberTemplateLint",
+      ":eslint",
+      ":stylelint",
+      ":tslint"
     ],
     "timezone": "Europe/Helsinki",
+    "automerge": false,
+    "major": {
+      "automerge": false,
+      "enabled": false
+    },
+    "vulnerabilityAlerts": {
+      "enabled": false
+    },
     "labels": [
       "dependencies"
     ],
@@ -29,7 +43,26 @@
     "branchPrefix": "renovate-",
     "rangeStrategy": "replace",
     "masterIssue": true,
+    
     "packageRules": [
+      {
+        "datasources": ["docker"],
+        "labels": ["docker-update"],
+        "updateTypes": [
+          "major",
+          "minor"
+        ],
+        "enabled": true
+      },     
+      {
+        "packagePatterns": [
+          "*"
+        ],
+        "minor": {
+          "groupName": "all non-major dependencies",
+          "groupSlug": "all-minor-patch"
+        }
+      },
       {
         "depTypeList": [
           "dependencies"
@@ -55,5 +88,13 @@
     ],
     "ignoreDeps": [
       "bower"
+    ],
+    "packageNames": [
+      "angular",
+      "angular-animate",
+      "angular-scroll",
+      "angular-sanitize",
+      "^stylelint",
+      "remark-lint"
     ]
   }

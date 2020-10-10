@@ -2,6 +2,11 @@
     "name": "renovate-config",
     "version": "0.0.1",
     "description": "Shared Renovate configuration for @furkatgofurov7 repositories",
+    "homepage": "https://github.com/furkatgofurov7/renovate-config",
+    "repository": "https://github.com/furkatgofurov7/renovate-config.git",
+    "bugs": {
+      "url": "https://github.com/furkatgofurov7/renovate-config/issues"
+    },
     "license": "MIT",
     "devDependencies": {
       "renovate": "^13.99.15"
