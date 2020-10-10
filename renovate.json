@@ -1,3 +1,59 @@
 {
-    "extends": ["config:base"]
+    "extends": [
+      ":npm",
+      ":docker",
+      ":separateMajorReleases",
+      ":combinePatchMinorReleases",
+      ":ignoreUnstable",
+      ":prImmediately",
+      ":semanticCommitsDisabled",
+      ":automergeDisabled",
+      ":ignoreModulesAndTests",
+      ":maintainLockFilesDisabled",
+      ":prHourlyLimit4",
+      ":prConcurrentLimit20",
+      "group:monorepos",
+      "group:recommended",
+      "helpers:disableTypesNodeMajor",
+      "helpers:oddIsUnstablePackages",
+      "schedule:nonOfficeHours",
+      ":noUnscheduledUpdates"
+    ],
+    "timezone": "Europe/Helsinki",
+    "labels": [
+      "dependencies"
+    ],
+    "supportPolicy": [
+      "lts"
+    ],
+    "branchPrefix": "renovate-",
+    "rangeStrategy": "replace",
+    "masterIssue": true,
+    "packageRules": [
+      {
+        "depTypeList": [
+          "dependencies"
+        ],
+        "rangeStrategy": "auto"
+      },
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7/vs-"
+        ],
+        "groupName": "vs-code monorepo",
+        "groupSlug": "vs-code"
+      },
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7/docker-"
+        ],
+        "rangeStrategy": "auto",
+        "masterIssueApproval": false,
+        "groupName": "docker-curriculum monorepo",
+        "groupSlug": "docker-curriculum"
+      }
+    ],
+    "ignoreDeps": [
+      "bower"
+    ]
   }
