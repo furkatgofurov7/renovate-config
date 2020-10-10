@@ -27,6 +27,7 @@
     ],
     "timezone": "Europe/Helsinki",
     "automerge": false,
+    "requiredStatusChecks": null,
     "major": {
       "automerge": false,
       "enabled": false

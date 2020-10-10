@@ -1,8 +1,8 @@
 # renovate-config
+![Renovate banner](./renovate-banner.jpg)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-green.svg)](https://github.com/RichardLitt/standard-readme)
+
 > Shared [Renovate](https://renovatebot.com/) configuration for furkatgofurov7 repositories.
-
-[![Renovate enabled](https://pother.ca/renovate-config/badge.svg)](https://renovate.whitesourcesoftware.com/)
-
 
 # renovate-config-next
 
