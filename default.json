@@ -28,6 +28,7 @@
     ],
     "assignees": ["furkatgofurov7"],
     "reviewers": ["namnx228"],
+    "includeForks": true,
     "timezone": "Europe/Helsinki",
     "automerge": false,
     "major": {
