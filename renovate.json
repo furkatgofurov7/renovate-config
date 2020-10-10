@@ -23,7 +23,8 @@
       ":emberTemplateLint",
       ":eslint",
       ":stylelint",
-      ":tslint"
+      ":tslint",
+      ":base"
     ],
     "assignees": ["furkatgofurov7"],
     "reviewers": ["namnx228"],
