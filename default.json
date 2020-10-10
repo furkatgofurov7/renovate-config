@@ -1,0 +1,115 @@
+{
+    "extends": [
+      ":npm",
+      ":docker",
+      ":separateMajorReleases",
+      ":combinePatchMinorReleases",
+      ":ignoreUnstable",
+      ":prImmediately",
+      ":semanticPrefixFixDepsChoreOthers",
+      ":updateNotScheduled",
+      ":automergeDisabled",
+      ":ignoreModulesAndTests",
+      ":autodetectPinVersions",
+      ":prHourlyLimit10",
+      ":prConcurrentLimit20",
+      "group:monorepos",
+      "group:recommended",
+      "helpers:disableTypesNodeMajor",
+      ":semanticCommitsDisabled",
+      ":maintainLockFilesDisabled",
+      "schedule:nonOfficeHours",
+      ":noUnscheduledUpdates",
+      ":emberTemplateLint",
+      ":eslint",
+      ":stylelint",
+      ":tslint",
+      ":base"
+    ],
+    "assignees": ["furkatgofurov7"],
+    "reviewers": ["namnx228"],
+    "timezone": "Europe/Helsinki",
+    "automerge": false,
+    "major": {
+      "automerge": false,
+      "enabled": false
+    },
+    "vulnerabilityAlerts": {
+      "enabled": false
+    },
+    "labels": [
+      "dependencies"
+    ],
+    "supportPolicy": [
+      "lts"
+    ],
+    "rangeStrategy": "replace",
+    "masterIssue": true,
+    
+    "packageRules": [
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7"
+        ]
+      },
+      {
+        "depTypeList": [
+          "devDependencies"
+        ],
+        "masterIssueApproval": true
+      },
+      {
+        "packageNames": [
+          "aws-sdk",
+          "angular",
+          "angular-animate",
+          "angular-scroll",
+          "angular-sanitize",
+          "^stylelint",
+          "remark-lint"
+        ],
+        "extends": ["schedule:monthly"]
+      },
+      {
+        "datasources": ["docker"],
+        "labels": ["docker-update"],
+        "updateTypes": [
+          "major",
+          "minor"
+        ],
+        "enabled": true
+      },     
+      {
+        "depTypeList": [
+          "dependencies"
+        ],
+        "rangeStrategy": "auto"
+      },
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7/vscode"
+        ],
+        "groupName": "vscode monorepo",
+        "groupSlug": "vscode"
+      },
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7/docker-"
+        ],
+        "rangeStrategy": "auto",
+        "groupName": "docker-curriculum monorepo",
+        "groupSlug": "docker-curriculum"
+      },
+      {
+        "packagePatterns": [
+          "^@furkatgofurov7/github-"
+        ],
+        "rangeStrategy": "auto",
+        "groupName": "github-readme-stats monorepo",
+        "groupSlug": "github-readme-stats"
+      }
+    ],
+    "ignoreDeps": [
+      "bower"
+    ]
+  }
