@@ -30,6 +30,9 @@
       "automerge": false,
       "enabled": false
     },
+    "lockFileMaintenance": {
+      "enabled": true
+    },
     "vulnerabilityAlerts": {
       "enabled": false
     },
@@ -45,7 +48,7 @@
     "packageRules": [
       {
         "packagePatterns": [
-          "^@furkatgofurov7"
+          "*"
         ]
       },
       {
@@ -83,34 +86,38 @@
       },
       {
         "packagePatterns": [
-          "^@furkatgofurov7/vscode"
+          "^vscode"
         ],
         "groupName": "vscode monorepo",
-        "groupSlug": "vscode"
+        "groupSlug": "vscode",
+        "enabled": true
       },
       {
         "packagePatterns": [
-          "^@furkatgofurov7/docker-"
+          "^docker-curriculum"
         ],
         "rangeStrategy": "auto",
         "groupName": "docker-curriculum monorepo",
-        "groupSlug": "docker-curriculum"
+        "groupSlug": "docker-curriculum",
+        "enabled": true
       },
       {
         "packagePatterns": [
-          "^@furkatgofurov7/awesome-"
+          "^awesome-README-templates"
         ],
         "rangeStrategy": "auto",
         "groupName": "awesome-README-templates monorepo",
-        "groupSlug": "awesome-README-templates"
+        "groupSlug": "awesome-README-templates",
+        "enabled": true
       },
       {
         "packagePatterns": [
-          "^@furkatgofurov7/github-"
+          "github-readme-stats"
         ],
         "rangeStrategy": "auto",
         "groupName": "github-readme-stats monorepo",
-        "groupSlug": "github-readme-stats"
+        "groupSlug": "github-readme-stats",
+        "enabled": true
       }
     ],
     "ignoreDeps": [
