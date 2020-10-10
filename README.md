@@ -5,12 +5,6 @@
 
 > Shared [Renovate](https://renovatebot.com/) configuration for furkatgofurov7 repositories.
 
-# renovate-config-next
-
-[![CircleCI](https://circleci.com/gh/Financial-Times/renovate-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/renovate-config-next)
-
-> Shared [Renovate](https://renovatebot.com/) configuration for furkatgofurov7 repositories.
-
 ## Our Configuration
 
 We have a custom set of rules for furkatgofurov7 repositories. We are generally...
