@@ -29,7 +29,6 @@
     ],
     "timezone": "Europe/Helsinki",
     "automerge": false,
-    "requiredStatusChecks": null,
     "major": {
       "automerge": false,
       "enabled": false
@@ -43,13 +42,31 @@
     "supportPolicy": [
       "lts"
     ],
-    "branchPrefix": "renovate-",
     "rangeStrategy": "replace",
     "masterIssue": true,
     
     "packageRules": [
       {
-        "packageNames": ["aws-sdk"],
+        "packagePatterns": [
+          "^@furkatgofurov7"
+        ]
+      },
+      {
+        "depTypeList": [
+          "devDependencies"
+        ],
+        "masterIssueApproval": true
+      },
+      {
+        "packageNames": [
+          "aws-sdk",
+          "angular",
+          "angular-animate",
+          "angular-scroll",
+          "angular-sanitize",
+          "^stylelint",
+          "remark-lint"
+        ],
         "extends": ["schedule:monthly"]
       },
       {
@@ -69,10 +86,10 @@
       },
       {
         "packagePatterns": [
-          "^@furkatgofurov7/vs-"
+          "^@furkatgofurov7/vscode"
         ],
-        "groupName": "vs-code monorepo",
-        "groupSlug": "vs-code"
+        "groupName": "vscode monorepo",
+        "groupSlug": "vscode"
       },
       {
         "packagePatterns": [
@@ -86,13 +103,5 @@
     ],
     "ignoreDeps": [
       "bower"
-    ],
-    "packageNames": [
-      "angular",
-      "angular-animate",
-      "angular-scroll",
-      "angular-sanitize",
-      "^stylelint",
-      "remark-lint"
     ]
   }
