@@ -11,7 +11,7 @@
       ":automergeDisabled",
       ":ignoreModulesAndTests",
       ":autodetectPinVersions",
-      ":prHourlyLimit2",
+      ":prHourlyLimit10",
       ":prConcurrentLimit20",
       "group:monorepos",
       "group:recommended",
