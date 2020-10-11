@@ -11,7 +11,7 @@ We have a custom set of rules for furkatgofurov7 repositories. We are generally.
 
 * Letting Renovate decide how to [modify or update existing ranges](https://renovatebot.com/docs/configuration-options/#rangestrategy) on renovate enabled repos owned `dependencies`
 
-* Grouping updates for our monorepos (such as [vscode](https://github.com/furkatgofurov7/vscode), [docker-curriculum](https://github.com/furkatgofurov7/docker-curriculum) and [awesome-README-templates](https://github.com/furkatgofurov7/awesome-README-templates)) into a single pull request.
+* Grouping updates for our monorepos (such as [vscode](https://github.com/furkatgofurov7/vscode), and [vscode-python](https://github.com/furkatgofurov7/vscode-python)) into a single pull request.
 
 
 ## Usage
