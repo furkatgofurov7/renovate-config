@@ -49,15 +49,7 @@
       {
         "packagePatterns": [
           "*"
-        ]
-      },
-      {
-        "depTypeList": [
-          "devDependencies"
         ],
-        "masterIssueApproval": true
-      },
-      {
         "packageNames": [
           "aws-sdk",
           "angular",
@@ -67,6 +59,13 @@
           "^stylelint",
           "remark-lint"
         ],
+        "depTypeList": [
+          "devDependencies"
+        ],
+        "masterIssueApproval": true,
+        "rangeStrategy": "auto"
+      },
+      {
         "extends": ["schedule:monthly"]
       },
       {
