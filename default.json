@@ -62,7 +62,6 @@
         "depTypeList": [
           "devDependencies"
         ],
-        "masterIssueApproval": true,
         "rangeStrategy": "auto"
       },
       {
