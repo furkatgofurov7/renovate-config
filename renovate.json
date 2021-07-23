@@ -26,8 +26,6 @@
       ":tslint",
       ":base"
     ],
-    "assignees": ["furkatgofurov7"],
-    "reviewers": ["namnx228"],
     "includeForks": true,
     "timezone": "Europe/Helsinki",
     "automerge": false,
@@ -86,29 +84,6 @@
         ],
         "rangeStrategy": "auto"
       },
-      {
-        "packagePatterns": [
-          "^@furkatgofurov7/vscode"
-        ],
-        "groupName": "vscode monorepo",
-        "groupSlug": "vscode"
-      },
-      {
-        "packagePatterns": [
-          "^@furkatgofurov7/docker-"
-        ],
-        "rangeStrategy": "auto",
-        "groupName": "docker-curriculum monorepo",
-        "groupSlug": "docker-curriculum"
-      },
-      {
-        "packagePatterns": [
-          "^@furkatgofurov7/github-"
-        ],
-        "rangeStrategy": "auto",
-        "groupName": "github-readme-stats monorepo",
-        "groupSlug": "github-readme-stats"
-      }
     ],
     "ignoreDeps": [
       "bower"
